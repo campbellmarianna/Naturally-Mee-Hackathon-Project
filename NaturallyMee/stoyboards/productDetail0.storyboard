@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTg-fq-B67">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Detail View Controller-->
+        <scene sceneID="bPr-IO-SNX">
+            <objects>
+                <viewController id="XTg-fq-B67" customClass="ProductDetailViewController" customModule="NaturallyMee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ody-Ba-WVM" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dwc-z6-pwf">
+                                <rect key="frame" x="45" y="474" width="285" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MOs-NN-daF"/>
+                                    <constraint firstAttribute="width" constant="285" id="y9h-26-jyO"/>
+                                </constraints>
+                                <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-0h-lBN">
+                                <rect key="frame" x="45" y="612" width="285" height="35"/>
+                                <color key="backgroundColor" red="0.4823529412" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fQw-cJ-FVy"/>
+                                    <constraint firstAttribute="width" constant="285" id="hje-SB-7uP"/>
+                                </constraints>
+                                <state key="normal" title="Buy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyButton:" destination="XTg-fq-B67" eventType="touchUpInside" id="3Co-Or-ap0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-5B-e2G">
+                                <rect key="frame" x="0.0" y="40" width="375" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="1AH-9W-Ea2"/>
+                                    <constraint firstAttribute="width" constant="375" id="HX1-HE-cQm"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="PrM-VJ-RrK">
+                                <rect key="frame" x="45" y="327" width="285" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-W0-OKj">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="285" id="E6x-zc-hRh"/>
+                                            <constraint firstAttribute="height" constant="39" id="l2g-z5-q9t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5I-AC-b4c">
+                                        <rect key="frame" x="122" y="74" width="41.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="19"/>
+                                        <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="7Az-Jc-t4P"/>
+                                    <constraint firstAttribute="width" constant="285" id="aHL-H5-gZF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PrM-VJ-RrK" firstAttribute="centerY" secondItem="RtN-8G-bAX" secondAttribute="centerY" id="BkL-oS-N1k"/>
+                            <constraint firstItem="ZCd-0h-lBN" firstAttribute="top" secondItem="Dwc-z6-pwf" secondAttribute="bottom" constant="18" id="Inw-wV-H15"/>
+                            <constraint firstItem="FvK-5B-e2G" firstAttribute="top" secondItem="RtN-8G-bAX" secondAttribute="top" constant="20" id="PLa-G5-qOd"/>
+                            <constraint firstItem="RtN-8G-bAX" firstAttribute="bottom" secondItem="ZCd-0h-lBN" secondAttribute="bottom" constant="20" id="POT-Kt-OaC"/>
+                            <constraint firstItem="Dwc-z6-pwf" firstAttribute="top" secondItem="PrM-VJ-RrK" secondAttribute="bottom" constant="40" id="Sea-hB-93H"/>
+                            <constraint firstItem="FvK-5B-e2G" firstAttribute="trailing" secondItem="RtN-8G-bAX" secondAttribute="trailing" id="SqE-Rm-CJp"/>
+                            <constraint firstItem="Dwc-z6-pwf" firstAttribute="centerX" secondItem="Ody-Ba-WVM" secondAttribute="centerX" id="aE5-VQ-9Mt"/>
+                            <constraint firstItem="FvK-5B-e2G" firstAttribute="leading" secondItem="RtN-8G-bAX" secondAttribute="leading" id="pfw-3H-1Py"/>
+                            <constraint firstItem="PrM-VJ-RrK" firstAttribute="top" secondItem="FvK-5B-e2G" secondAttribute="bottom" constant="32" id="qhB-LO-HPw"/>
+                            <constraint firstItem="ZCd-0h-lBN" firstAttribute="centerX" secondItem="Ody-Ba-WVM" secondAttribute="centerX" id="r8n-bF-OKv"/>
+                            <constraint firstItem="PrM-VJ-RrK" firstAttribute="centerX" secondItem="RtN-8G-bAX" secondAttribute="centerX" id="xbi-Ew-yuy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RtN-8G-bAX"/>
+                    </view>
+                    <connections>
+                        <outlet property="productDescriptionTextView" destination="Dwc-z6-pwf" id="EoM-eW-0Dk"/>
+                        <outlet property="productImageView" destination="FvK-5B-e2G" id="QsY-ze-l6b"/>
+                        <outlet property="productNameLabel" destination="xnl-W0-OKj" id="Fg3-Ha-nD8"/>
+                        <outlet property="productPriceLabel" destination="l5I-AC-b4c" id="2nf-eB-4RX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLT-pL-PbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
